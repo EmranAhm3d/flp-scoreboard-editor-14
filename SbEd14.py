@@ -153,8 +153,8 @@ def set_offsets_and_colors(internal_name):
             "Away Score Y": 0x16CC,
             "Time Text X": 0x1708,
             "Time Text Y": 0x170C,
-            "Stoppage Time Text X": 0x1B08,
-            "Stoppage Time Text Y": 0x1B0C,
+            "Stoppage Time X": 0x40E8,
+            "Stoppage Time Y": 0x40EC,
             "Home Color Bar X": 0x17C8,
             "Home Color Bar Y": 0x17CC,
             "Away Color Bar X": 0x1888,
@@ -589,17 +589,17 @@ def about():
     about_window.resizable(False, False)
     bold_font = ("Helvetica", 12, "bold")
     tk.Label(about_window, text="FLP Scoreboard Editor 14 By FIFA Legacy Project.", pady=10, font=bold_font).pack()
-    tk.Label(about_window, text="Version 1.0 [Build 12 August 2024]", pady=10).pack()
+    tk.Label(about_window, text="Version 1.1 [Build 13 November 2024]", pady=10).pack()
     tk.Label(about_window, text="© 2024 FIFA Legacy Project. All Rights Reserved.", pady=10).pack()
     tk.Label(about_window, text="Designed & Developed By Emran_Ahm3d.", pady=10).pack()
     tk.Label(about_window, text="Special Thanks to JuicyShaqMeat for the Research.", pady=10).pack()
-    link = tk.Label(about_window, text="My SoccerGaming Profile", fg="blue", cursor="hand2")
+    link = tk.Label(about_window, text="Official Forum Thread for Feedback and Bug Reports", fg="blue", cursor="hand2")
     link.pack(pady=5)
-    link.bind("<Button-1>", lambda e: webbrowser.open_new("https://soccergaming.com/index.php?members/emran_ahm3d.221563/"))
+    link.bind("<Button-1>", lambda e: webbrowser.open_new("https://www.soccergaming.com/index.php?threads/download-flp-scoreboard-editor-14.6473355/post-6801850"))
     tk.Label(about_window, text="Discord: @emran_ahm3d", pady=10).pack()
 
 def show_info():
-    messagebox.showinfo("Scoreboard Editor v1.0", "Developed by [Your Name]\nVersion 1.0")
+    messagebox.showinfo("Scoreboard Editor v1.1", "Developed by [Your Name]\nVersion 1.1")
 
 def show_documentation():
     webbrowser.open("https://soccergaming.com/index.php?threads/emrans-fifa-14-overlays-research.6473147/")
@@ -614,8 +614,8 @@ def exit_app():
 
 # Main Window
 root = tk.Tk()
-root.title("FLP Scoreboard Editor 14 (v1.0)")
-root.geometry("1000x600")
+root.title("FLP Scoreboard Editor 14 (v1.1)")
+root.geometry("700x500")
 root.resizable(False, False)
 
 # Menu
